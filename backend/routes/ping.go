@@ -12,4 +12,6 @@ func RegisterRoutes(router *gin.Engine) {
 	{
 		ping.GET("", controllers.Ping)
 	}
+
+	RegisterScrapeRoutes(router)
 }
